@@ -1,0 +1,1052 @@
+{
+  "feed": "all-warnings",
+  "classification": {
+    "eventType": {
+      "011": 0.22251273051318746,
+      "012": 0.001384641168373841,
+      "013": 0.39656078163373487,
+      "014": 0.1513663933041844,
+      "015": 0.10333486328012587,
+      "016": 0.12484059010039228
+    },
+    "population": { 
+      "Education": 0.2024851143238373,
+      "Business": 0.0017196609612130421,
+      "Media": 3.382768281479442E-7,
+      "Medical": 0.0002882112083470216,
+      "Legal": 3.8980036595146194E-8,
+      "General Population": 0.43137581186103463,
+      "Refugees/Displaced": 0.00002113646098114947,
+      "Ethnic": 0.0014615227098102447,
+      "Agricultural": 0.00828499332786425,
+      "Labor": 0.3543594687158485,
+      "Religious": 0.000003703174200284609
+    },
+    "version": "locBasedNB-0.0.1",
+    "violence": {
+      "1": 0.22434792413500004,
+      "2": 0.7756520758650003
+    }
+  },
+  "short_model": "Planned Protest",
+  "eventType": "0132", 
+  "comments": "PlannedProtest, source:twitter-public, , tweet:Coordinadora Ibagué @angelaserrato1 vamos todos a marchar este 13 de Diciembre #ColombiaQuiere...  phrase: MARCHAR,MARCHARAN, , retweet_cnt: 21qs-prediction: 2.44",
+  "location_popln_size": 513671,
+  "confidence": 1.0,
+  "coordinates": [
+    4.45,
+    -75.24
+  ],
+  "state": "NEW 2014-11-24T16:26:54.181759",
+  "location": [ 
+    "Colombia",
+    "Tolima",
+    "Ibagué"
+  ],
+  "population": "General Population", 
+  "old_location_popln_size": 513671,
+  "feedPath": [
+    "planned-protest-warnings",
+    "civilunrest-warnings",
+    "civilunrest-gsr-rate-filter",
+    "civilunrest-fused-warnings",
+    "all-warnings"
+  ],
+  "derivedFrom": {
+    "fusionMessage": {
+      "fusion_threshold": 1.5
+    },
+    "retweet_cnt": 21,
+    "triggerPhrase": "MARCHAR,MARCHARAN", 
+    "start": "2014-11-24T16:26:22.534965",
+    "comments": "PlannedProtest, source:twitter-public, , tweet:Coordinadora Ibagué @angelaserrato1 vamos todos a marchar este 13 de Diciembre #ColombiaQuiere...  phrase: MARCHAR,MARCHARAN, , retweet_cnt: 21",
+    "source": "twitter-public",
+    "derivedMessages": [
+      {
+        "feed": "planned-protest-surrogate",
+        "feedPath": [
+          "planned-protest-surrogate"
+        ],
+        "retweet_cnt": 21,
+        "classification": {
+          "eventType": {
+            "011": 0.22251273051318746,
+            "012": 0.001384641168373841,
+            "013": 0.39656078163373487,
+            "014": 0.1513663933041844,
+            "015": 0.10333486328012587,
+            "016": 0.12484059010039228
+          },
+          "population": {
+            "Education": 0.2024851143238373,
+            "Business": 0.0017196609612130421,
+            "Media": 3.382768281479442E-7,
+            "Medical": 0.0002882112083470216,
+            "Legal": 3.8980036595146194E-8,
+            "General Population": 0.43137581186103463,
+            "Refugees/Displaced": 0.00002113646098114947,
+            "Ethnic": 0.0014615227098102447,
+            "Agricultural": 0.00828499332786425,
+            "Labor": 0.3543594687158485,
+            "Religious": 0.000003703174200284609
+          },
+          "version": "locBasedNB-0.0.1",
+          "violence": {
+            "1": 0.22434792413500004,
+            "2": 0.7756520758650003
+          }
+        },
+        "triggerPhrase": "MARCHAR,MARCHARAN",
+        "derivedFrom": {
+          "source": "twitter-public",
+          "derivedMessages": [
+            {
+              "feed": "planned-protest-all-twitter-filtered",
+              "embersGeoCode": {
+                "city": "Ibagué",
+                "country": "Colombia",
+                "longitude": -75.24,
+                "admin1": "Tolima",
+                "source": "rt_user_location,tweet_text",
+                "admin3": null,
+                "admin2": null,
+                "pad": 0,
+                "pop": 513671,
+                "latitude": 4.45,
+                "id": 340030476,
+                "geocode_version": "Geo-0.2.4-897921c8fe6bc90a23644c60f5288f78-80c4fd07ded78ed72c1060128de39f31-a11777aee70b701c433d995042bf22ae"
+              },
+              "interaction": {
+                "mention_ids": [
+                  2886163401,
+                  1236638994
+                ],
+                "author": {
+                  "username": "johitaruizc",
+                  "name": "Johanna Ruiz",
+                  "language": "es",
+                  "link": "https://twitter.com/johitaruizc",
+                  "avatar": "http://pbs.twimg.com/profile_images/510649371395117056/vtjlUK9g_normal.jpeg",
+                  "id": 1656217244
+                },
+                "created_at": "Mon, 24 Nov 2014 16:25:27 +0000",
+                "hashtags": [
+                  "ColombiaQuiere"
+                ],
+                "content": "RT @MiColombiaUnida: Coordinadora Ibagué @angelaserrato1 vamos todos a marchar este 13 de Diciembre #ColombiaQuiere...", 
+                "source": "Twitter for iPhone",
+                "link": "https://twitter.com/johitaruizc/status/536918529426325504",
+                "received_at": 1416846327.813,
+                "mentions": [
+                  "MiColombiaUnida",
+                  "angelaserrato1"
+                ],
+                "type": "twitter",
+                "id": "1e473f67fb9fa580e0742dfa3e44a6c0",
+                "schema": {
+                  "version": 3
+                }
+              },
+              "embersLang": "spa",
+              "BasisEnrichment": {
+                "nounPhrases": [
+                  {
+                    "expr": "RT",
+                    "offset": "1:2"
+                  },
+                  {
+                    "expr": "MiColombiaUnida",
+                    "offset": "3:4"
+                  },
+                  {
+                    "expr": "Coordinadora Ibagué",
+                    "offset": "5:7"
+                  },
+                  {
+                    "expr": "@ angelaserrato1",
+                    "offset": "7:9"
+                  },
+                  {
+                    "expr": "este 13 de Diciembre",
+                    "offset": "13:17"
+                  },
+                  {
+                    "expr": "ColombiaQuiere",
+                    "offset": "18:19"
+                  }
+                ],
+                "language": "Spanish",
+                "errorMessage": "",
+                "enrichmentProcess": "RLP Java API v7.11.1",
+                "tokens": [
+                  {
+                    "lemma": "\"",
+                    "end": "1",
+                    "POS": "PUNCT",
+                    "value": "\"",
+                    "start": "0"
+                  },
+                  {
+                    "lemma": "RT",
+                    "end": "3",
+                    "POS": "PROP",
+                    "value": "RT",
+                    "start": "1"
+                  },
+                  {
+                    "lemma": "@",
+                    "end": "5",
+                    "POS": "PUNCT",
+                    "value": "@",
+                    "start": "4"
+                  },
+                  {
+                    "lemma": "MiColombiaUnida",
+                    "end": "20",
+                    "POS": "PROP",
+                    "value": "MiColombiaUnida",
+                    "start": "5"
+                  },
+                  {
+                    "lemma": ":",
+                    "end": "21",
+                    "POS": "PUNCT",
+                    "value": ":",
+                    "start": "20"
+                  },
+                  {
+                    "lemma": "coordinador",
+                    "end": "34",
+                    "POS": "NOUNSG",
+                    "value": "Coordinadora",
+                    "start": "22"
+                  },
+                  {
+                    "lemma": "Ibagué",
+                    "end": "41",
+                    "POS": "PROP",
+                    "value": "Ibagué",
+                    "start": "35"
+                  },
+                  {
+                    "lemma": "@",
+                    "end": "43",
+                    "POS": "NOUN",
+                    "value": "@",
+                    "start": "42"
+                  },
+                  {
+                    "lemma": "angelaserrato1",
+                    "end": "57",
+                    "POS": "ADJ",
+                    "value": "angelaserrato1",
+                    "start": "43"
+                  },
+                  {
+                    "lemma": "ir",
+                    "end": "63",
+                    "POS": "VERBIMP",
+                    "value": "vamos",
+                    "start": "58"
+                  },
+                  {
+                    "lemma": "todo",
+                    "end": "69",
+                    "POS": "PREDETPL",
+                    "value": "todos",
+                    "start": "64"
+                  },
+                  {
+                    "lemma": "a",
+                    "end": "71",
+                    "POS": "PREP",
+                    "value": "a",
+                    "start": "70"
+                  },
+                  {
+                    "lemma": "marchar",
+                    "end": "79",
+                    "POS": "VERBINF",
+                    "value": "marchar",
+                    "start": "72"
+                  },
+                  {
+                    "lemma": "este",
+                    "end": "84",
+                    "POS": "DETSG",
+                    "value": "este",
+                    "start": "80"
+                  },
+                  {
+                    "lemma": "13",
+                    "end": "87",
+                    "POS": "DIG",
+                    "value": "13",
+                    "start": "85"
+                  },
+                  {
+                    "lemma": "de",
+                    "end": "90",
+                    "POS": "PREP",
+                    "value": "de",
+                    "start": "88"
+                  },
+                  {
+                    "lemma": "diciembre",
+                    "end": "100",
+                    "POS": "NOUNSG",
+                    "value": "Diciembre",
+                    "start": "91"
+                  },
+                  {
+                    "lemma": "#",
+                    "end": "102",
+                    "POS": "PUNCT",
+                    "value": "#",
+                    "start": "101"
+                  },
+                  {
+                    "lemma": "ColombiaQuiere",
+                    "end": "116",
+                    "POS": "PROP",
+                    "value": "ColombiaQuiere",
+                    "start": "102"
+                  },
+                  {
+                    "lemma": ".",
+                    "end": "117",
+                    "POS": "SENT",
+                    "value": ".",
+                    "start": "116"
+                  },
+                  {
+                    "lemma": ".",
+                    "end": "118",
+                    "POS": "SENT",
+                    "value": ".",
+                    "start": "117"
+                  },
+                  {
+                    "lemma": ".",
+                    "end": "119",
+                    "POS": "SENT",
+                    "value": ".",
+                    "start": "118"
+                  },
+                  {
+                    "lemma": "\"",
+                    "end": "120",
+                    "POS": "PUNCT",
+                    "value": "\"",
+                    "start": "119"
+                  }
+                ],
+                "entities": [
+                  {
+                    "expr": "@MiColombiaUnida",
+                    "neType": "TWITTER:USERNAME",
+                    "offset": "2:4"
+                  },
+                  {
+                    "expr": "Coordinadora Ibagué",
+                    "neType": "LOCATION",
+                    "offset": "5:7"
+                  },
+                  {
+                    "expr": "@angelaserrato1",
+                    "neType": "TWITTER:USERNAME",
+                    "offset": "7:9"
+                  },
+                  {
+                    "expr": "13 de Diciembre",
+                    "neType": "TEMPORAL:DATE",
+                    "offset": "14:17"
+                  },
+                  {
+                    "expr": "#ColombiaQuiere",
+                    "neType": "TWITTER:HASHTAG",
+                    "offset": "17:19"
+                  }
+                ],
+                "langSource": "Basis-RLI"
+              },
+              "eventSemantics": {
+                "dct": "2014-11-24",
+                "errorMessage": null,
+                "datetimes": [
+                  {
+                    "date": "2014-12-13",
+                    "phrase": "13 de diciembre",
+                    "type": "explicit",
+                    "id": 0,
+                    "offset": "14:17"
+                  }
+                ],
+                "language": "Spanish",
+                "enrichmentProcess": "TIMEN v1.0.7"
+              },
+              "derivedFrom": {
+                "derivedMessages": [
+                  {
+                    "feed": "datasift-keyword",
+                    "embersGeoCode": {
+                      "city": "Ibagué",
+                      "country": "Colombia",
+                      "longitude": -75.24,
+                      "admin1": "Tolima",
+                      "source": "rt_user_location,tweet_text",
+                      "admin3": null,
+                      "admin2": null,
+                      "pad": 0,
+                      "pop": 513671,
+                      "latitude": 4.45,
+                      "id": 340030476,
+                      "geocode_version": "Geo-0.2.4-897921c8fe6bc90a23644c60f5288f78-80c4fd07ded78ed72c1060128de39f31-a11777aee70b701c433d995042bf22ae"
+                    },
+                    "interaction": {
+                      "mention_ids": [
+                        2886163401,
+                        1236638994
+                      ],
+                      "author": {
+                        "username": "johitaruizc",
+                        "name": "Johanna Ruiz",
+                        "language": "es",
+                        "link": "https://twitter.com/johitaruizc",
+                        "avatar": "http://pbs.twimg.com/profile_images/510649371395117056/vtjlUK9g_normal.jpeg",
+                        "id": 1656217244
+                      },
+                      "created_at": "Mon, 24 Nov 2014 16:25:27 +0000",
+                      "hashtags": [
+                        "ColombiaQuiere"
+                      ],
+                      "content": "RT @MiColombiaUnida: Coordinadora Ibagué @angelaserrato1 vamos todos a marchar este 13 de Diciembre #ColombiaQuiere...",
+                      "source": "Twitter for iPhone",
+                      "link": "https://twitter.com/johitaruizc/status/536918529426325504",
+                      "received_at": 1416846327.813,
+                      "mentions": [
+                        "MiColombiaUnida",
+                        "angelaserrato1"
+                      ],
+                      "type": "twitter",
+                      "id": "1e473f67fb9fa580e0742dfa3e44a6c0",
+                      "schema": {
+                        "version": 3
+                      }
+                    },
+                    "embersLang": "spa",
+                    "BasisEnrichment": {
+                      "nounPhrases": [
+                        {
+                          "expr": "RT",
+                          "offset": "1:2"
+                        },
+                        {
+                          "expr": "MiColombiaUnida",
+                          "offset": "3:4"
+                        },
+                        {
+                          "expr": "Coordinadora Ibagué",
+                          "offset": "5:7"
+                        },
+                        {
+                          "expr": "@ angelaserrato1",
+                          "offset": "7:9"
+                        },
+                        {
+                          "expr": "este 13 de Diciembre",
+                          "offset": "13:17"
+                        },
+                        {
+                          "expr": "ColombiaQuiere",
+                          "offset": "18:19"
+                        }
+                      ],
+                      "language": "Spanish",
+                      "errorMessage": "",
+                      "enrichmentProcess": "RLP Java API v7.11.1",
+                      "tokens": [
+                        {
+                          "lemma": "\"",
+                          "end": "1",
+                          "POS": "PUNCT",
+                          "value": "\"",
+                          "start": "0"
+                        },
+                        {
+                          "lemma": "RT",
+                          "end": "3",
+                          "POS": "PROP",
+                          "value": "RT",
+                          "start": "1"
+                        },
+                        {
+                          "lemma": "@",
+                          "end": "5",
+                          "POS": "PUNCT",
+                          "value": "@",
+                          "start": "4"
+                        },
+                        {
+                          "lemma": "MiColombiaUnida",
+                          "end": "20",
+                          "POS": "PROP",
+                          "value": "MiColombiaUnida",
+                          "start": "5"
+                        },
+                        {
+                          "lemma": ":",
+                          "end": "21",
+                          "POS": "PUNCT",
+                          "value": ":",
+                          "start": "20"
+                        },
+                        {
+                          "lemma": "coordinador",
+                          "end": "34",
+                          "POS": "NOUNSG",
+                          "value": "Coordinadora",
+                          "start": "22"
+                        },
+                        {
+                          "lemma": "Ibagué",
+                          "end": "41",
+                          "POS": "PROP",
+                          "value": "Ibagué",
+                          "start": "35"
+                        },
+                        {
+                          "lemma": "@",
+                          "end": "43",
+                          "POS": "NOUN",
+                          "value": "@",
+                          "start": "42"
+                        },
+                        {
+                          "lemma": "angelaserrato1",
+                          "end": "57",
+                          "POS": "ADJ",
+                          "value": "angelaserrato1",
+                          "start": "43"
+                        },
+                        {
+                          "lemma": "ir",
+                          "end": "63",
+                          "POS": "VERBIMP",
+                          "value": "vamos",
+                          "start": "58"
+                        },
+                        {
+                          "lemma": "todo",
+                          "end": "69",
+                          "POS": "PREDETPL",
+                          "value": "todos",
+                          "start": "64"
+                        },
+                        {
+                          "lemma": "a",
+                          "end": "71",
+                          "POS": "PREP",
+                          "value": "a",
+                          "start": "70"
+                        },
+                        {
+                          "lemma": "marchar",
+                          "end": "79",
+                          "POS": "VERBINF",
+                          "value": "marchar",
+                          "start": "72"
+                        },
+                        {
+                          "lemma": "este",
+                          "end": "84",
+                          "POS": "DETSG",
+                          "value": "este",
+                          "start": "80"
+                        },
+                        {
+                          "lemma": "13",
+                          "end": "87",
+                          "POS": "DIG",
+                          "value": "13",
+                          "start": "85"
+                        },
+                        {
+                          "lemma": "de",
+                          "end": "90",
+                          "POS": "PREP",
+                          "value": "de",
+                          "start": "88"
+                        },
+                        {
+                          "lemma": "diciembre",
+                          "end": "100",
+                          "POS": "NOUNSG",
+                          "value": "Diciembre",
+                          "start": "91"
+                        },
+                        {
+                          "lemma": "#",
+                          "end": "102",
+                          "POS": "PUNCT",
+                          "value": "#",
+                          "start": "101"
+                        },
+                        {
+                          "lemma": "ColombiaQuiere",
+                          "end": "116",
+                          "POS": "PROP",
+                          "value": "ColombiaQuiere",
+                          "start": "102"
+                        },
+                        {
+                          "lemma": ".",
+                          "end": "117",
+                          "POS": "SENT",
+                          "value": ".",
+                          "start": "116"
+                        },
+                        {
+                          "lemma": ".",
+                          "end": "118",
+                          "POS": "SENT",
+                          "value": ".",
+                          "start": "117"
+                        },
+                        {
+                          "lemma": ".",
+                          "end": "119",
+                          "POS": "SENT",
+                          "value": ".",
+                          "start": "118"
+                        },
+                        {
+                          "lemma": "\"",
+                          "end": "120",
+                          "POS": "PUNCT",
+                          "value": "\"",
+                          "start": "119"
+                        }
+                      ],
+                      "entities": [
+                        {
+                          "expr": "@MiColombiaUnida",
+                          "neType": "TWITTER:USERNAME",
+                          "offset": "2:4"
+                        },
+                        {
+                          "expr": "Coordinadora Ibagué",
+                          "neType": "LOCATION",
+                          "offset": "5:7"
+                        },
+                        {
+                          "expr": "@angelaserrato1",
+                          "neType": "TWITTER:USERNAME",
+                          "offset": "7:9"
+                        },
+                        {
+                          "expr": "13 de Diciembre",
+                          "neType": "TEMPORAL:DATE",
+                          "offset": "14:17"
+                        },
+                        {
+                          "expr": "#ColombiaQuiere",
+                          "neType": "TWITTER:HASHTAG",
+                          "offset": "17:19"
+                        }
+                      ],
+                      "langSource": "Basis-RLI"
+                    },
+                    "eventSemantics": {
+                      "dct": "2014-11-24",
+                      "errorMessage": null,
+                      "datetimes": [
+                        {
+                          "date": "2014-12-13",
+                          "phrase": "13 de diciembre",
+                          "type": "explicit",
+                          "id": 0,
+                          "offset": "14:17"
+                        }
+                      ],
+                      "language": "Spanish",
+                      "enrichmentProcess": "TIMEN v1.0.7"
+                    },
+                    "derivedFrom": {
+                      "derivedMessages": [
+                        {
+                          "feed": "datasift-unsorted",
+                          "feedPath": [
+                            "datasift-unsorted"
+                          ],
+                          "interaction": {
+                            "mention_ids": [
+                              2886163401,
+                              1236638994
+                            ],
+                            "author": {
+                              "username": "johitaruizc",
+                              "name": "Johanna Ruiz",
+                              "language": "es",
+                              "link": "https://twitter.com/johitaruizc",
+                              "avatar": "http://pbs.twimg.com/profile_images/510649371395117056/vtjlUK9g_normal.jpeg",
+                              "id": 1656217244
+                            },
+                            "created_at": "Mon, 24 Nov 2014 16:25:27 +0000",
+                            "hashtags": [
+                              "ColombiaQuiere"
+                            ],
+                            "content": "RT @MiColombiaUnida: Coordinadora Ibagué @angelaserrato1 vamos todos a marchar este 13 de Diciembre #ColombiaQuiere...",
+                            "source": "Twitter for iPhone",
+                            "link": "https://twitter.com/johitaruizc/status/536918529426325504",
+                            "received_at": 1416846327.813,
+                            "mentions": [
+                              "MiColombiaUnida",
+                              "angelaserrato1"
+                            ],
+                            "type": "twitter",
+                            "id": "1e473f67fb9fa580e0742dfa3e44a6c0",
+                            "schema": {
+                              "version": 3
+                            }
+                          },
+                          "embersLang": "spa",
+                          "language": {
+                            "confidence": 98,
+                            "tag": "es",
+                            "tag_extended": "es"
+                          },
+                          "embers_stream": "mainv2",
+                          "demographic": {
+                            "gender": "female"
+                          },
+                          "embers_islive": 1,
+                          "salience": {
+                            "content": {
+                              "sentiment": 0
+                            }
+                          },
+                          "klout": {
+                            "score": 41
+                          },
+                          "date": "2014-11-24T16:25:27",
+                          "twitter": {
+                            "retweeted": {
+                              "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                              "created_at": "Sun, 23 Nov 2014 02:35:19 +0000",
+                              "id": "536347232078168064",
+                              "user": {
+                                "lang": "es",
+                                "verified": false,
+                                "description": "Cuenta Oficial de la marcha del 13 de Diciembre, aca te diremos coordinadores por ciudad",
+                                "friends_count": 459,
+                                "created_at": "Thu, 20 Nov 2014 22:05:08 +0000",
+                                "profile_image_url": "http://pbs.twimg.com/profile_images/535554985430224897/9UKukOaO_normal.jpeg",
+                                "id": 2886163401,
+                                "followers_count": 458,
+                                "id_str": "2886163401",
+                                "screen_name": "MiColombiaUnida", 
+                                "location": "COLOMBIA",
+                                "statuses_count": 292,
+                                "favourites_count": 20,
+                                "geo_enabled": false,
+                                "listed_count": 0,
+                                "profile_image_url_https": "https://pbs.twimg.com/profile_images/535554985430224897/9UKukOaO_normal.jpeg",
+                                "name": "#ColombiaUnida"
+                              }
+                            },
+                            "id": "536918529426325504",
+                            "retweet": {
+                              "count": 21,
+                              "lang": "es",
+                              "mention_ids": [
+                                2886163401,
+                                1236638994
+                              ],
+                              "filter_level": "low",
+                              "text": "Coordinadora Ibagué @angelaserrato1 vamos todos a marchar este 13 de Diciembre #ColombiaQuiere...",
+                              "created_at": "Mon, 24 Nov 2014 16:25:27 +0000", 
+                              "hashtags": [
+                                "ColombiaQuiere"
+                              ],
+                              "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                              "user": {
+                                "lang": "es",
+                                "verified": false,
+                                "name": "Johanna Ruiz",
+                                "friends_count": 564,
+                                "created_at": "Thu, 08 Aug 2013 21:15:01 +0000",
+                                "location": "Colombia",
+                                "profile_image_url": "http://pbs.twimg.com/profile_images/510649371395117056/vtjlUK9g_normal.jpeg",
+                                "id": 1656217244,
+                                "followers_count": 287,
+                                "id_str": "1656217244",
+                                "statuses_count": 5177,
+                                "favourites_count": 1556,
+                                "geo_enabled": false,
+                                "listed_count": 0,
+                                "profile_image_url_https": "https://pbs.twimg.com/profile_images/510649371395117056/vtjlUK9g_normal.jpeg",
+                                "screen_name": "johitaruizc" 
+                              },
+                              "mentions": [
+                                "MiColombiaUnida",
+                                "angelaserrato1"
+                              ],
+                              "id": "536918529426325504"
+                            }
+                          },
+                          "embersId": "datasift:1e473f67fb9fa580e0742dfa3e44a6c0"
+                        }
+                      ]
+                    },
+                    "twitter": {
+                      "retweeted": {
+                        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                        "created_at": "Sun, 23 Nov 2014 02:35:19 +0000",
+                        "id": "536347232078168064",
+                        "user": {
+                          "lang": "es",
+                          "verified": false,
+                          "description": "Cuenta Oficial de la marcha del 13 de Diciembre, aca te diremos coordinadores por ciudad",
+                          "friends_count": 459,
+                          "created_at": "Thu, 20 Nov 2014 22:05:08 +0000",
+                          "profile_image_url": "http://pbs.twimg.com/profile_images/535554985430224897/9UKukOaO_normal.jpeg",
+                          "id": 2886163401,
+                          "followers_count": 458,
+                          "id_str": "2886163401",
+                          "screen_name": "MiColombiaUnida",
+                          "location": "COLOMBIA",
+                          "statuses_count": 292,
+                          "favourites_count": 20,
+                          "geo_enabled": false,
+                          "listed_count": 0,
+                          "profile_image_url_https": "https://pbs.twimg.com/profile_images/535554985430224897/9UKukOaO_normal.jpeg",
+                          "name": "#ColombiaUnida"
+                        }
+                      },
+                      "id": "536918529426325504",
+                      "retweet": {
+                        "count": 21,
+                        "lang": "es",
+                        "mention_ids": [
+                          2886163401,
+                          1236638994
+                        ],
+                        "filter_level": "low",
+                        "text": "Coordinadora Ibagué @angelaserrato1 vamos todos a marchar este 13 de Diciembre #ColombiaQuiere...",
+                        "created_at": "Mon, 24 Nov 2014 16:25:27 +0000",
+                        "hashtags": [
+                          "ColombiaQuiere"
+                        ],
+                        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                        "user": {
+                          "lang": "es",
+                          "verified": false,
+                          "name": "Johanna Ruiz",
+                          "friends_count": 564,
+                          "created_at": "Thu, 08 Aug 2013 21:15:01 +0000",
+                          "location": "Colombia",
+                          "profile_image_url": "http://pbs.twimg.com/profile_images/510649371395117056/vtjlUK9g_normal.jpeg",
+                          "id": 1656217244,
+                          "followers_count": 287,
+                          "id_str": "1656217244",
+                          "statuses_count": 5177,
+                          "favourites_count": 1556,
+                          "geo_enabled": false,
+                          "listed_count": 0,
+                          "profile_image_url_https": "https://pbs.twimg.com/profile_images/510649371395117056/vtjlUK9g_normal.jpeg",
+                          "screen_name": "johitaruizc"
+                        },
+                        "mentions": [
+                          "MiColombiaUnida",
+                          "angelaserrato1"
+                        ],
+                        "id": "536918529426325504"
+                      }
+                    },
+                    "demographic": {
+                      "gender": "female"
+                    },
+                    "embers_islive": 1,
+                    "language": {
+                      "confidence": 98,
+                      "tag": "es",
+                      "tag_extended": "es"
+                    },
+                    "feedPath": [
+                      "datasift-unsorted",
+                      "basis-datasift",
+                      "datasift-keyword"
+                    ],
+                    "salience": {
+                      "content": {
+                        "sentiment": 0
+                      }
+                    },
+                    "klout": {
+                      "score": 41
+                    },
+                    "parentId": "datasift:1e473f67fb9fa580e0742dfa3e44a6c0",
+                    "date": "2014-11-24T16:25:27",
+                    "embers_stream": "mainv2",
+                    "embersId": "9f99bf4a412de1ce017e2328fd5e6f19e4a1dd00"
+                  }
+                ]
+              },
+              "twitter": {
+                "retweeted": {
+                  "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                  "created_at": "Sun, 23 Nov 2014 02:35:19 +0000",
+                  "id": "536347232078168064",
+                  "user": {
+                    "lang": "es",
+                    "verified": false,
+                    "description": "Cuenta Oficial de la marcha del 13 de Diciembre, aca te diremos coordinadores por ciudad",
+                    "friends_count": 459,
+                    "created_at": "Thu, 20 Nov 2014 22:05:08 +0000",
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/535554985430224897/9UKukOaO_normal.jpeg",
+                    "id": 2886163401,
+                    "followers_count": 458,
+                    "id_str": "2886163401",
+                    "screen_name": "MiColombiaUnida",
+                    "location": "COLOMBIA",
+                    "statuses_count": 292,
+                    "favourites_count": 20,
+                    "geo_enabled": false,
+                    "listed_count": 0,
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/535554985430224897/9UKukOaO_normal.jpeg",
+                    "name": "#ColombiaUnida"
+                  }
+                },
+                "id": "536918529426325504",
+                "retweet": {
+                  "count": 21,
+                  "lang": "es",
+                  "mention_ids": [
+                    2886163401,
+                    1236638994
+                  ],
+                  "filter_level": "low",
+                  "text": "Coordinadora Ibagué @angelaserrato1 vamos todos a marchar este 13 de Diciembre #ColombiaQuiere...",
+                  "created_at": "Mon, 24 Nov 2014 16:25:27 +0000",
+                  "hashtags": [
+                    "ColombiaQuiere"
+                  ],
+                  "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                  "user": {
+                    "lang": "es",
+                    "verified": false,
+                    "name": "Johanna Ruiz",
+                    "friends_count": 564,
+                    "created_at": "Thu, 08 Aug 2013 21:15:01 +0000",
+                    "location": "Colombia",
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/510649371395117056/vtjlUK9g_normal.jpeg",
+                    "id": 1656217244,
+                    "followers_count": 287,
+                    "id_str": "1656217244",
+                    "statuses_count": 5177,
+                    "favourites_count": 1556,
+                    "geo_enabled": false,
+                    "listed_count": 0,
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/510649371395117056/vtjlUK9g_normal.jpeg",
+                    "screen_name": "johitaruizc"
+                  },
+                  "mentions": [
+                    "MiColombiaUnida",
+                    "angelaserrato1"
+                  ],
+                  "id": "536918529426325504"
+                }
+              },
+              "demographic": {
+                "gender": "female"
+              },
+              "embers_islive": 1,
+              "language": {
+                "confidence": 98,
+                "tag": "es",
+                "tag_extended": "es"
+              },
+              "feedPath": [
+                "datasift-unsorted",
+                "basis-datasift",
+                "datasift-keyword",
+                "planned-protest-all-twitter-filtered"
+              ],
+              "salience": {
+                "content": {
+                  "sentiment": 0
+                }
+              },
+              "klout": {
+                "score": 41
+              },
+              "parentId": "9f99bf4a412de1ce017e2328fd5e6f19e4a1dd00",
+              "date": "2014-11-24T16:25:27",
+              "keyPhrases": {
+                "process": "keyPhraseFinder",
+                "phrasesPresent": {
+                  "phrases": [
+                    "MARCHAR",
+                    "MARCHARAN"
+                  ],
+                  "offsets": [
+                    12,
+                    12
+                  ]
+                },
+                "resource": "s3:embers-osi-data/resources/keywords/twitter-plannedProtest/twitter-plannedProtest.2014-07-25T14-14-49"
+              },
+              "embers_stream": "mainv2",
+              "embersId": "cd6308b800b4c6aaee22b7501f1e2069763bfdd0"
+            }
+          ],
+          "end": "2014-11-24T00:00:00",
+          "resource": "s3:embers-osi-data/resources/keywords/twitter-plannedProtest/twitter-plannedProtest.2014-07-25T14-14-49",
+          "start": "2014-11-24T00:00:00"
+        },
+        "eventType": "0132",
+        "url": "Coordinadora Ibagué @angelaserrato1 vamos todos a marchar este 13 de Diciembre #ColombiaQuiere...",
+        "model": "PlannedProtest 1.0.4v1",
+        "location": {
+          "admin1": "Tolima",
+          "city": "Ibagué",
+          "country": "Colombia"
+        },
+        "timePhrase": "13 de diciembre", 
+        "date": "2014-11-24T16:26:22.534965",
+        "nationalStrike": false,
+        "embersId": "17e8e050f683d53980ff265f74622e2906c3a6f9",
+        "eventDate": "2014-12-13T00:00:00",
+        "population": "General Population"
+      }
+    ],
+    "end": "2014-11-24T16:26:22.534965",
+    "model": "plannedProtest-1.0.4.v1"
+  },
+  "fileName": "../alerts/get_warning/b8d6784f1b105b115cc295ae0c96cb65b0544c86",
+  "date": "2014-11-24T16:26:22.534965",
+  "mitreId": "",
+  "confidenceIsProbability": "True",
+  "eventDate": "2014-12-13T00:00:00", 
+  "embersId": "b8d6784f1b105b115cc295ae0c96cb65b0544c86",
+  "distance": 0.0,
+  "coords": {
+    "lat": 4.45,
+    "lng": -75.24
+  },
+  "nearbyWarnings_count": {
+    "total": 0.0
+  },
+  "qs_prediction": {
+    "total": 2.4444499999999993,  
+    "location": 0.6653,
+    "time": 0.5603
+  },
+  "model": "plannedProtest",
+  "old_location": [
+    "Colombia",
+    "Tolima",
+    "Ibagué"
+  ]
+}
