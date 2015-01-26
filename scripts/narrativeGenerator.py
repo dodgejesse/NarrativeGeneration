@@ -16,20 +16,16 @@ def printPerformanceAssessment(event):
     print 'Based on past events in this area, there is a ' + protestTypeAboveThreshold(event)
 
 def protestTypeAboveThreshold(event):
-    eventProbs = event.getMaxAboveThreshold(event.eventProbs, .25)
-    
-    print 
-    print 
-    print event.getMax(event.eventProbs)
-    print event.getMaxAboveThreshold(event.eventProbs, .1)
-    print
-    print
-    stringEventProbs = eventProbs[0][1] + ' probability that this event is related to ' + convertEventNumIntoDescriptivePhrase(eventNum)
+    eventProbs = event.getMaxAboveThreshold(event.eventProbs, .1)
+    stringEventProbs = `eventProbs[0][1]` + ' probability that this event is related to ' + convertEventNumIntoDescriptivePhrase(eventProbs[0][0])
 
     # to loop over the other events that are above threshold
-    for (eventNum, prob) in eventProbs:
-        stringEventProbs = stringEventProbs + ', and a ' + prob + ' that this event is related to ' + convertEventNumIntoDescriptivePhrase(eventNum)
+    
+    for i in range(len(eventProbs)-1):
+        (eventNum, prob) = eventProbs[i]
+        stringEventProbs = stringEventProbs + ', and a ' + `prob` + ' that this event is related to ' + convertEventNumIntoDescriptivePhrase(eventNum)
     stringEventProbs = stringEventProbs + '.'
+    return stringEventProbs
         
     
 
