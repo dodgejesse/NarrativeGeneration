@@ -1,5 +1,6 @@
 import sys,json,operator
 from event import ProtestEvent
+import narrativeGenerator
 
 """
 Parse the json audit trail json and extract the relevant fields presented in the sample narrative
@@ -29,7 +30,7 @@ def parse(filename):
 	# footnote 12
 	violenceProbs=sortDictByValue(data["classification"]["violence"])
 
-	# footnote 1,5
+	# footnote 5
 	eventType=data["eventType"]
 
 	# footnote 3
@@ -43,8 +44,9 @@ def parse(filename):
 
 	
 	event=ProtestEvent(eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence)
-	event.printData()
+	#event.printData()
 	
+	narrativeGenerator.generate(event)
 
 	##
 	# These are the fields for the sample narrative, but this will be very different depending on the evidence (e.g., this one happened to be a retweet, so the information presented is specific to that fact)
@@ -73,6 +75,7 @@ def parse(filename):
 
 		# footnote 10
 		print message["timePhrase"]
+	
 
 if __name__ == "__main__":
 	parse(sys.argv[1])
