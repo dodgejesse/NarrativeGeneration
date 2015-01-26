@@ -37,10 +37,12 @@ class ProtestEvent:
 
 	# pop max values of (k,v) list if v > threshold
 	def getMaxAboveThreshold(self, array, threshold):
+		print array
 		plist=[]
-		for i in range(1,len(array)):
+		for i in range(0,len(array)):
 			(k,v)=array[i]
-			if v > threshold:
+			print k,v
+			if int(v) > threshold:
 				plist.append((k,v))
 
 	# prints the data in this event

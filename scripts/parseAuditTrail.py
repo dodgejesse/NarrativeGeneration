@@ -45,8 +45,6 @@ def parse(filename):
 	
 	event=ProtestEvent(eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence)
 	#event.printData()
-	
-	narrativeGenerator.generate(event)
 
 	##
 	# These are the fields for the sample narrative, but this will be very different depending on the evidence (e.g., this one happened to be a retweet, so the information presented is specific to that fact)
@@ -75,6 +73,9 @@ def parse(filename):
 
 		# footnote 10
 		print message["timePhrase"]
+	narrativeGenerator.generate(event)
+	
+	
 	
 
 if __name__ == "__main__":
