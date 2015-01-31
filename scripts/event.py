@@ -5,12 +5,18 @@ Class to store data for protest events
 class ProtestEvent:
 
 	# All of these args seem required for any event prediction
-	def __init__(self, eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence):
+	def __init__(self, eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence, location_popln_size, source, triggerPhrase):
 		self.date=date
 		self.eventType=eventType
 		self.date=date
 		self.location=location
 		self.confidence=confidence
+		self.location_popln_size=location_popln_size
+
+		# twitter-public, twitter-url, RSS
+		self.source=source
+
+		self.triggerPhrase=triggerPhrase
 
 		##
 		# all probability distributions; keep all in case we want to discuss uncertainty (or if the max doesn't win by much)
