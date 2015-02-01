@@ -55,7 +55,7 @@ def parse(filename):
 	confidence=json.loads(data["qs_prediction"])["total"]
 
 	
-	event=ProtestEvent(eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence, location_popln_size, source, triggerPhrase)
+	event=ProtestEvent(eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence, location_popln_size, source, triggerPhrase, comments)
 
 	narrativeGenerator.generate(event)
 	
