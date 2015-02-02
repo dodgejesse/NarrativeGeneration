@@ -48,10 +48,6 @@ def parse(filename):
 	source=derivedFrom["source"]
 	triggerPhrase=derivedFrom["triggerPhrase"]
 
-	
-	event=ProtestEvent(eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence)
-	event.printData()
-
 	# comments are an unstructured mess; might be good to get it to us more structured.
 	comments=derivedFrom["comments"]
 
@@ -60,10 +56,10 @@ def parse(filename):
 
 	
 	event=ProtestEvent(eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence, location_popln_size, source, triggerPhrase)
+	event.printData()
+	print 
 
 	narrativeGenerator.generate(event)
-	
-	
 	
 
 if __name__ == "__main__":

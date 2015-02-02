@@ -59,3 +59,4 @@ class ProtestEvent:
 		print "Event: %s" % (self.getMax(self.eventProbs))
 		print "Population: %s" % (self.getMaxAboveThreshold(self.populationProbs, .25))
 		print "Violence: %s" % (self.getMax(self.violenceProbs))
+		print "Source: %s" % self.source
