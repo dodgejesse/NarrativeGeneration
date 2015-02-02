@@ -2,16 +2,30 @@
 Class to store data for protest events
 """
 
+import re
+
 class ProtestEvent:
 
 	# All of these args seem required for any event prediction
-	def __init__(self, eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence, location_popln_size, source, triggerPhrase):
+	def __init__(self, eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence, location_popln_size, source, triggerPhrase, comments):
 		self.date=date
 		self.eventType=eventType
 		self.date=date
 		self.location=location
 		self.confidence=confidence
 		self.location_popln_size=location_popln_size
+		self.retweets=-1
+
+		self.comments=comments
+
+		matcher=re.search("retweet_cnt: (\d+)$", comments)
+		if matcher != None:
+			self.retweets=int(matcher.group(1))
+
+		# print "SOURCE: %s" % source
+		# print "TWEET: %s" % tweet
+		# print "PHRASE: %s" % phrase
+		# print "RETWEETS: %s" % retweets
 
 		# twitter-public, twitter-url, RSS
 		self.source=source
