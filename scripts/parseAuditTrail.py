@@ -1,4 +1,4 @@
-import sys,json,operator
+import sys,json,operator,GSRReader
 from event import ProtestEvent
 import narrativeGenerator
 
@@ -13,9 +13,9 @@ python parseAuditTrail.py <audit trail json file>
 def sortDictByValue(eventProbs):
 	return sorted(eventProbs.items(), key=operator.itemgetter(1), reverse=True)
 
-def parse(filename):
+def parse(auditTrailFilename, GSRFilename):
 
-	file=open(filename)
+	file=open(auditTrailFilename)
 	data=json.load(file)
 	file.close()
 
@@ -55,12 +55,15 @@ def parse(filename):
 	confidence=json.loads(data["qs_prediction"])["total"]
 
 	
+	
 	event=ProtestEvent(eventType, date, location, eventProbs, populationProbs, violenceProbs, confidence, location_popln_size, source, triggerPhrase, comments)
-	event.printData()
-	print 
+	#event.printData()
+	#print 
 
-	narrativeGenerator.generate(event)
+	gsr=GSRReader.readGSR(GSRFilename)
+
+	narrativeGenerator.generate(event, gsr)
 	
 
 if __name__ == "__main__":
-	parse(sys.argv[1])
+	parse(sys.argv[1], sys.argv[2])

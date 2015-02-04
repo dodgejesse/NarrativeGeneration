@@ -21,6 +21,18 @@ class ProtestEvent:
 		matcher=re.search("retweet_cnt: (\d+)$", comments)
 		if matcher != None:
 			self.retweets=int(matcher.group(1))
+		
+		self.tweet = ''
+		matcher=re.search("tweet:(.*) phrase:", comments)
+		if matcher != None:
+			self.tweet=matcher.group(1)
+		
+		self.url = ''
+		matcher=re.search("url:(.*) phrase:", comments)
+		if matcher != None:
+			self.url=matcher.group(1)
+		
+
 
 		# print "SOURCE: %s" % source
 		# print "TWEET: %s" % tweet
